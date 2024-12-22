@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumika Kulkarni - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Bhumika Kulkarni</h1>
+            <p>Manjunathpur 1st cross, Maalamaddi Dharwad-07</p>
+            <p>📞 917022250892 | ✉️ <a href="mailto:bhumikabk03@gmail.com">bhumikabk03@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/bhumika-balaji-kulkarni-a36752332" target="_blank" class="btn">LinkedIn Profile</a></p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="objective" class="fade-in">
+            <h2>Objective</h2>
+            <p>To seek a challenging and rewarding work environment in an organization wherein I can leverage my technical skills and contribute significantly towards achieving their goals.</p>
+        </section>
+
+        <section id="education" class="fade-in">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>KLE Technological University, Hubli</strong> - Bachelor of Computer Applications (8.87 GPA) <em>(Pursuing)</em></li>
+                <li><strong>J.S.S R.S. Hukkerikar, Dharwad</strong> - Pre-University Course (71%)</li>
+                <li><strong>Bala-Balaga School, Dharwad</strong> - Secondary School Leaving Certificate (88.8%)</li>
+            </ul>
+        </section>
+
+        <section id="skills" class="fade-in">
+            <h2>Skills</h2>
+            <p>C, C++, Java, SQL, Python, HTML, CSS, Microsoft Suite</p>
+        </section>
+
+        <section id="projects" class="fade-in">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Electronic Patient Health Record System:</strong> A MERN Stack web application to store and manage patients' medical data.</li>
+                <li><strong>Smart Resumes:</strong> A project for ATS-friendly resumes using an ensembled approach for skill extraction and matching.</li>
+            </ul>
+        </section>
+
+        <section id="certifications" class="fade-in">
+            <h2>Certifications</h2>
+            <p>Python Programming Certification</p>
+        </section>
+
+        <section id="internship" class="fade-in">
+            <h2>Internship</h2>
+            <p>Currently interning at LifeSigns.Org on the Uroflow Meter Project, focusing on data visualization and retrieval.</p>
+        </section>
+
+        <section id="workshops" class="fade-in">
+            <h2>Workshops</h2>
+            <ul>
+                <li>Full Stack Web Development (2023)</li>
+                <li>Computer Networks (2023)</li>
+                <li>Deep Learning and CNN (2024)</li>
+                <li>Cyber Security (2024)</li>
+                <li>Generative AI (2024)</li>
+            </ul>
+        </section>
+
+        <section id="extracurricular" class="fade-in">
+            <h2>Extra Curricular Activities</h2>
+            <ul>
+                <li>Participated in Math Star-2k19 competition.</li>
+                <li>Represented school in Youth Biodiversity Congress 2019 at Auroville.</li>
+                <li>Attended a science competition organized by ISRO.</li>
+                <li>Engaged in leadership programs and event organization.</li>
+            </ul>
+        </section>
+
+        <section id="languages" class="fade-in">
+            <h2>Languages</h2>
+            <p>English, Hindi, Kannada</p>
+        </section>
+    </main>
+
+
+
+    <script>
+        const fadeIns = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        fadeIns.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
